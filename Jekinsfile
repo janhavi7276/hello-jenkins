@@ -1,28 +1,24 @@
 pipeline {
 
-agent any
+  agent any
 
-environment {
+  environment {
 
-REGION = 'ap-south-1'
+    REGION = 'ap-south-1'
 
-ACCOUNT = '123456789012'
+    ACCOUNT = '123456789012'
 
-REPO
+    REPO = 'hello-jenkins'
 
-= 'hello-jenkins'
+    INSTANCE = 'none'
 
-INSTANCE = 'none'
-
-REGISTRY =
+    REGISTRY =
 
 "${ACCOUNT}.dkr.ecr.${REGION}.amazonaws.com"
 
-IMG = "${REPO}:${BUILD_NUMBER}"
+  IMG = "${REPO}:${BUILD_NUMBER}"
 
-REMOTE
-
-= "${REGISTRY}/${REPO}:latest"
+  REMOTE = "${REGISTRY}/${REPO}:latest"
 
 }
 
