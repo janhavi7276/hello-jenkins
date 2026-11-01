@@ -2,8 +2,8 @@ def run(cmd) { if (isUnix()) { sh cmd } else { bat cmd } }
 
 def awsRun(cmd) {
   withCredentials([
-    string(credentialsId: 'aws-key-id', variable: 'AKIARWOVJUTRLOEI3V6M'),
-    string(credentialsId: 'aws-secret', variable: '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')
+    string(credentialsId: 'aws-key-id', variable: 'AKIARWOVJUTRPG52BLFH'),
+    string(credentialsId: 'aws-secret', variable: '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')
   ]) { run(cmd) }
 }
 
