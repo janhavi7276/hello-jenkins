@@ -22,7 +22,7 @@ pipeline {
   agent any
   environment {
     REGION   = 'ap-south-1'
-    ACCOUNT  = 'PUT_YOUR_12_DIGIT_ACCOUNT_ID_HERE'
+    ACCOUNT  = '116948313314'
     REPO     = 'hello-jenkins'
     INSTANCE = 'none'
     REGISTRY = "${ACCOUNT}.dkr.ecr.${REGION}.amazonaws.com"
